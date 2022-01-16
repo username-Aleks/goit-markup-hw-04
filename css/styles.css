@@ -8,6 +8,7 @@
   --hero-footer-background-color: #2f303a;
   --hero-button-hover-color: #188ce8;
   --project-border-color: #eeeeee;
+  --icons-color: #afb1b8;
 }
 
 /* палитра */
@@ -280,9 +281,76 @@ header {
   line-height: 1.18;
   text-align: center;
 }
+
+.social-links {
+  margin: 0 32px 30px 32px;
+}
+
+.team-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-icon-item {
+  margin-right: 10px;
+}
+.team-icon-item:nth-child(4) {
+  margin-right: 0;
+}
+
+.team-icon-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  color: var(--icons-color);
+  text-align: center;
+
+  border-radius: 50%;
+}
+.team-icon-link:hover {
+  background-color: var(--accent-tex-color);
+  color: var(--primary-white-color);
+}
+.team-icon {
+  margin: 12px;
+  fill: currentColor;
+}
+
 .our-team {
   background-color: var(--secondary-background-color);
 }
+/* _____________________________секция клиенты компании_____________________ */
+.clients-list {
+  display: flex;
+}
+.company-logo {
+  margin-right: 30px;
+  text-align: center;
+  color: var(--icons-color);
+}
+
+.clients-list .item:nth-child(6) {
+  margin-right: 0;
+}
+
+.company-logo-link {
+  display: block;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  color: var(--icons-color);
+}
+.company-logo-link:hover {
+  color: var(--accent-tex-color);
+  border-color: var(--accent-tex-color);
+}
+
+.company-logo-icon {
+  margin: 16px 32px;
+  fill: currentColor;
+}
+
 /* _____________________________портфолио____________________ */
 .portfolio-buttons {
   display: flex;
@@ -389,6 +457,9 @@ header {
 .button:focus {
   background-color: var(--accent-tex-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .hero-button.button {
   padding: 10px 32px;
