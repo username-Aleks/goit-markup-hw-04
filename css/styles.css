@@ -129,7 +129,7 @@ header {
 }
 
 .contacts .link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -420,13 +420,23 @@ header {
 
 /* ____________________________________________подвал страницы_______________________________________________ */
 .footer {
-  padding-top: 60px;
+  /* padding-top: 60px; */
   padding-bottom: 60px;
   background-color: var(--hero-footer-background-color);
 }
+
+.footer-content {
+  display: flex;
+}
+.footer-adress {
+  margin-top: 60px;
+  margin-right: 70px;
+}
+
 .footer .link {
   display: block;
 }
+
 .adress {
   color: var(--primary-white-color);
   font-style: normal;
@@ -447,6 +457,51 @@ header {
 .adress-contacts .link {
   color: rgba(255, 255, 255, 0.6);
 }
+
+.footer-social-links {
+  margin-top: 72px;
+}
+.footer-social-links-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.footer-social-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-icon-item {
+  margin-right: 10px;
+}
+.footer-social-icon-item:nth-child(4) {
+  margin-right: 0;
+}
+
+.footer-icon-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  color: var(--primary-white-color);
+  text-align: center;
+
+  border-radius: 50%;
+}
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  background-color: var(--accent-tex-color);
+}
+.social-icon {
+  margin: 12px;
+  fill: currentColor;
+}
+
 /* ____________________________________________BUTTONS_________________________________________________ */
 .button {
   display: inline-block;
