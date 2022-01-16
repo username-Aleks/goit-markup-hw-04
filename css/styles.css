@@ -23,6 +23,7 @@
 /* цвет фона героя и футера #2F303A */
 /* дополнительный цвет текста логотипа, рамки главной кнопки  #000000 */
 /* цвет рамки карточки проекта    #EEEEEE */
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--primary-white-color);
@@ -319,7 +320,8 @@ header {
 
   border-radius: 50%;
 }
-.team-icon-link:hover {
+.team-icon-link:hover,
+.team-icon-link:focus {
   background-color: var(--accent-tex-color);
   color: var(--primary-white-color);
 }
@@ -353,7 +355,8 @@ header {
   height: 92px;
   color: var(--icons-color);
 }
-.company-logo-link:hover {
+.company-logo-link:hover,
+.company-logo-link:focus {
   color: var(--accent-tex-color);
   border-color: var(--accent-tex-color);
 }
@@ -420,7 +423,6 @@ header {
 
 /* ____________________________________________подвал страницы_______________________________________________ */
 .footer {
-  /* padding-top: 60px; */
   padding-bottom: 60px;
   background-color: var(--hero-footer-background-color);
 }
