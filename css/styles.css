@@ -139,6 +139,11 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.icon-tel {
+  display: inline-block;
+  margin-right: 10px;
+  fill: currentColor;
+}
 .site-nav .current,
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -198,6 +203,14 @@ header {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+}
+.advantage-icon {
+  text-align: center;
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+
+  margin-bottom: 30px;
+  padding: 25px 100px;
 }
 
 .advantage {
