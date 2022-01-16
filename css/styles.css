@@ -139,8 +139,7 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.icon-tel {
-  display: inline-block;
+.icon-contact {
   margin-right: 10px;
   fill: currentColor;
 }
