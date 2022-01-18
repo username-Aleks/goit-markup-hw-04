@@ -477,9 +477,6 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.footer-social-icon-item {
-  align-items: center;
-}
 
 .footer-icon-link {
   display: flex;
