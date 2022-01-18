@@ -23,6 +23,7 @@
 /* цвет фона героя и футера #2F303A */
 /* дополнительный цвет текста логотипа, рамки главной кнопки  #000000 */
 /* цвет рамки карточки проекта    #EEEEEE */
+/* цвет фона иконок в футере   rgba(255, 255, 255, 0.1) */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -133,6 +134,7 @@ header {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 
   color: var(--pimary-tex-color);
   font-weight: 500;
@@ -205,12 +207,16 @@ header {
   text-align: center;
 }
 .advantage-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 120px;
   text-align: center;
   background-color: var(--secondary-background-color);
   border-radius: 4px;
 
   margin-bottom: 30px;
-  padding: 25px 100px;
 }
 
 .advantage {
@@ -288,31 +294,23 @@ header {
 }
 .team-profession {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
 }
 
-.social-links {
-  margin: 0 32px 30px 32px;
-}
-
 .team-icons {
   display: flex;
   justify-content: space-between;
-}
-
-.team-icon-item {
-  margin-right: 10px;
-}
-.team-icon-item:nth-child(4) {
-  margin-right: 0;
+  margin: 0 32px;
 }
 
 .team-icon-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   color: var(--icons-color);
@@ -326,7 +324,6 @@ header {
   color: var(--primary-white-color);
 }
 .team-icon {
-  margin: 12px;
   fill: currentColor;
 }
 
@@ -336,19 +333,16 @@ header {
 /* _____________________________секция клиенты компании_____________________ */
 .clients-list {
   display: flex;
+  justify-content: space-around;
 }
 .company-logo {
-  margin-right: 30px;
-  text-align: center;
   color: var(--icons-color);
 }
 
-.clients-list .item:nth-child(6) {
-  margin-right: 0;
-}
-
 .company-logo-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--icons-color);
   border-radius: 4px;
   width: 170px;
@@ -362,7 +356,7 @@ header {
 }
 
 .company-logo-icon {
-  margin: 16px 32px;
+  /* margin: 16px 32px; */
   fill: currentColor;
 }
 
@@ -423,15 +417,16 @@ header {
 
 /* ____________________________________________подвал страницы_______________________________________________ */
 .footer {
+  padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--hero-footer-background-color);
 }
 
 .footer-content {
   display: flex;
+  align-items: baseline;
 }
 .footer-adress {
-  margin-top: 60px;
   margin-right: 70px;
 }
 
@@ -459,10 +454,10 @@ header {
 .adress-contacts .link {
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer-social-links {
-  margin-top: 72px;
+  width: 206px;
 }
+
 .footer-social-links-text {
   margin-top: 0;
   margin-bottom: 20px;
@@ -477,13 +472,7 @@ header {
 .footer-social-icons {
   display: flex;
   justify-content: space-between;
-}
-
-.footer-social-icon-item {
-  margin-right: 10px;
-}
-.footer-social-icon-item:nth-child(4) {
-  margin-right: 0;
+  align-items: center;
 }
 
 .footer-icon-link {
@@ -492,6 +481,7 @@ header {
   height: 44px;
   color: var(--primary-white-color);
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
 
   border-radius: 50%;
 }
