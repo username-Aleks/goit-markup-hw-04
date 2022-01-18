@@ -475,7 +475,6 @@ header {
 .footer-social-icons {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .footer-icon-link {
