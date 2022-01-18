@@ -433,7 +433,7 @@ header {
   margin-right: 70px;
 }
 
-.footer .link {
+.footer-adress .link {
   display: block;
 }
 
@@ -477,9 +477,14 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.footer-social-icon-item {
+  align-items: center;
+}
 
 .footer-icon-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   color: var(--primary-white-color);
@@ -493,7 +498,6 @@ header {
   background-color: var(--accent-tex-color);
 }
 .social-icon {
-  margin: 12px;
   fill: currentColor;
 }
 
